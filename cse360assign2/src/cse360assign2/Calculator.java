@@ -36,7 +36,7 @@ public class Calculator {
 	/*
 	 * getTotal
 	 * @params: none
-	 * @return: 0...?
+	 * @return: total
 	 * @description, returns private member "total"
 	 */
 	public int getTotal () {
