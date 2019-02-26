@@ -41,7 +41,7 @@ public class Calculator {
 	 * @description: adds total and value, probably adds addition to string
 	 */
 	public void add (int value) {
-		
+		total += value;		
 	}
 	
 	/*
@@ -51,7 +51,7 @@ public class Calculator {
 	 * @description: subtracts value from total, probably adds subtraction to string
 	 */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
 	
 	/*
@@ -61,7 +61,7 @@ public class Calculator {
 	 * @description: multiplies total by value, probably adds multiplication to string
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	
 	/*
@@ -71,7 +71,10 @@ public class Calculator {
 	 * @description: divides total by value, probably adds division to string
 	 */
 	public void divide (int value) {
-		
+		if (value != 0)
+			total = total / value;
+		else
+			total = 0;
 	}
 	
 	/*
